@@ -9,7 +9,7 @@
                 <array>
                     <dict>
                         <key>url</key>
-                        <string>https://img.pailemegou.cn/paileme.ipa</string>
+                        <string>https://github.com/the-best-looking-is-me/jsDemo/blob/master/paileme.ipa</string>
                         <key>kind</key>
                         <string>software-package</string>
                     </dict>
@@ -18,14 +18,14 @@
                         <key>kind</key>
                         <string>display-image</string>
                         <key>url</key>
-                        <string>https://img.pailemegou.cn/57X57.png</string>
+                        <string>https://raw.githubusercontent.com/the-best-looking-is-me/jsDemo/master/57X57.png</string>
                     	</dict>
 
 			<dict>
                         <key>kind</key>
                         <string>full-size-image</string>
                         <key>url</key>
-                        <string>hhttps://img.pailemegou.cn/521X521.png</string>
+                        <string>https://raw.githubusercontent.com/the-best-looking-is-me/jsDemo/master/521X521.png</string>
                     	</dict>
 			
                 </array>
