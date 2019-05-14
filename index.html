@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js 学习</title>
+
+</head>
+<body>
+
+	<!-- <script type="text/javascript" src="jsTool.js">
+	</script> -->
+
+	<script type="text/javascript">
+
+		//原始值 
+		// Number Boolean String undefined(申请但未赋值) null(特殊的占位值)
+
+		//引用值 
+		//array Object function ...date RegExp
+		//var arr = [];
+
+		// console.log(isNaN(undefined)); //undefined -> true
+		// console.log(isNaN(null));//null -> false
+
+
+		// function add(a) {
+			//arguments存放所有的参数 
+			// console.log(arguments);
+		// }
+
+		// add(1,2,3,4,5);
+
+		//函数申明整体提升
+		//变量的申明提升
+
+		//暗示全局变量 ：未申明就直接赋值的变量，归window所有
+		//一切申明的全局变量，均是window的属性 
+
+		//预编译的四步
+		//1.创建AO对象
+		//2.找形参和变量声明，将变量和形参名作为AO属性名，值为undefined
+		//3.将实参值和形参统一
+		//4.在函数体里面找函数声明，值赋函数体
+		/*
+		function fn(a) {
+			console.log(a);
+			var a = 123;
+			console.log(a);
+			function a () {}
+			console.log(a);
+			var b = function () {}
+			console.log(b);
+			function d() {}
+		}
+		fn(1);
+		*/
+
+		/***** 时间处理 ****/
+		//var date = new Date();
+		//console.log(date); 时间对象
+		//console.log(date.getFullYear()); 年份
+		// console.log(date.getTime()); 毫秒数
+
+		//重写toLocaleString方法，格式化得到自己想要的格式
+		// Date.prototype.toLocaleString = function(symbol) {
+        //   return this.getFullYear() + symbol + (this.getMonth() + 1) + symbol + this.getDate() + " " + this.getHours() + ":" + this.getMinutes() + ":" + this.getSeconds();
+    	// };
+
+		//时间戳(秒)转字符串
+		//var stamp = "1557634332";
+		//var unixTimestamp = new Date( stamp * 1000 );
+		//console.log(unixTimestamp);
+		//commonTime = unixTimestamp.toLocaleString("-");
+		//console.log(commonTime);
+
+		//时间戳转Date
+		//var stamp = "1557634332";
+		//var unixTimestamp = new Date( stamp * 1000 );
+
+		//字符串转时间戳(秒)
+		//var date = "2019-05-12 12:12:12";
+		//date = date.substring(0,date.length);    
+		//date = date.replace(/-/g,'/'); 
+		//var timestamp = new Date(date).getTime();
+		//document.write(timestamp / 1000);
+		
+		//字符串转Date
+		//var date = "2019-05-12 12:12:12";
+		//date = date.substring(0,date.length);    
+		//date = date.replace(/-/g,'/'); 
+		//var timestamp = new Date(date);
+
+		//Date转时间戳
+		//var date = "2019-05-12 12:12:12";
+		//date = date.substring(0,date.length);    
+		// date = date.replace(/-/g,'/'); 
+		// var timestamp = new Date(date);
+		// var second = timestamp.getTime() / 1000;
+		// console.log(second);
+
+		//Date转字符串 
+		//var date = "2019-05-12 12:12:12";
+		//date = date.substring(0,date.length);    
+		//date = date.replace(/-/g,'/'); 
+		//var timestamp = new Date(date);
+		//var str = timestamp.toLocaleString("-");
+		//console.log(str);
+
+		//有趣的例子
+		// function a () {
+		// 	function b () {
+		// 		var bbb = 234;
+		// 		console.log(aaa);
+		// 	}
+		// 	var aaa = 123;
+		// 	return b;
+		// }
+
+		// var glob = 100;
+		// var demo = a();
+		// demo();
+
+		//有趣的例子
+		// function a() {
+		// 	var num = 100;
+		// 	function b() {
+		// 		num ++;
+		// 		console.log(num);
+		// 	}
+		// 	return b;
+		// }
+
+		// var demo = a();
+		// demo();
+		// demo();
+
+
+		//闭包
+		//当内部函数被保存到外部时，将会生成闭包
+		//闭包会导致原有作用域链不释放，造成内存汇露
+
+		//有趣的例子
+		// function test() {
+		// 	var num = 100;
+		// 	function a() {
+		// 		num ++ ;
+		// 		console.log(num);
+		// 	}
+		// 	function b() {
+		// 		num -- ;
+		// 		console.log(num);
+		// 	}
+		// 	return [a,b];
+		// }
+
+		// var myArr = test();
+		// myArr[0]();
+		// myArr[1]();
+
+		//立即执行函数,只被执行一次
+		//表达式都能被执行符号()执行
+	 	(function(){
+
+		}())
+
+		(function(){})()
+
+		//有趣的例子
+		// var value = (function(a,b){
+		// 	return a + b;
+		// }(1,2))
+
+
+
+
+		
+
+
+	</script>
+
+</body>
+</html>
