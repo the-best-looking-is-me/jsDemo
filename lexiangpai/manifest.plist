@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>assets</key>
+                <array>
+                    <dict>
+                        <key>url</key>
+                        <string>https://img.lexiangpaijinggou.com/download/ios/liexiangpai.ipa</string>
+                        <key>kind</key>
+                        <string>software-package</string>
+                    </dict>
+
+			<dict>
+                        <key>kind</key>
+                        <string>display-image</string>
+                        <key>url</key>
+                        <string>https://img.lexiangpaijinggou.com/download/ios/57X57.png</string>
+                    	</dict>
+
+			<dict>
+                        <key>kind</key>
+                        <string>full-size-image</string>
+                        <key>url</key>
+                        <string>https://img.lexiangpaijinggou.com/download/ios/521X521.png</string>
+                    	</dict>
+			
+                </array>
+ 
+                <key>metadata</key>
+                <dict>
+                    <key>bundle-identifier</key>
+                    <string>com.enjoy.auction</string>
+ 
+                    <key>title</key>
+                    <string>乐享拍</string>
+ 
+                    <key>bundle-version</key>
+                    <string>1.0.3</string>
+ 
+                    <key>kind</key>
+                    <string>software</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
