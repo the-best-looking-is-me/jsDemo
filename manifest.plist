@@ -9,7 +9,7 @@
                 <array>
                     <dict>
                         <key>url</key>
-                        <string>http://192.168.0.108/paeleme.ipa</string>
+                        <string>https://img.pailemegou.cn/download/paileme.ipa</string>
                         <key>kind</key>
                         <string>software-package</string>
                     </dict>
